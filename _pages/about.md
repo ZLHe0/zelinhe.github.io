@@ -16,6 +16,8 @@ I am currently pursuing my Ph.D. in Statistics at Penn State. This summer, I wil
 - AdaTrans: Feature-wise and Sample-wise Adaptive Transfer Learning for High-dimensional Regression (2024+) [[Paper](https://arxiv.org/abs/2403.13565)]   [[Talk (in Chinese)](https://www.xiong99.com.cn/p/t_pc/course_pc_detail/video/v_65fd4c40e4b0d84d784b4b1d)]
   - Zelin He, Ying Sun, Jingyuan Liu, Runze Li
 
+>  📧 If you're interested in my research, don't hesitate to send me an email!! Let's chat more about it.
+
 ## Education
 - Ph.D. in Statistics, Pennsylvania State University, 2022 - Present.
 - B.S. in Statistics, Beijing Normal University, 2018 - 2022.
