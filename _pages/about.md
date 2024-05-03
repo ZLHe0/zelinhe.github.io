@@ -13,7 +13,7 @@ I am currently pursuing my Ph.D. in Statistics at Penn State. This summer, I wil
 - TransFusion: Covariate-Shift Robust Transfer Learning for High-Dimensional Regression (2024) [[Paper](https://proceedings.mlr.press/v238/he24a.html)]
   - Zelin He, Ying Sun, Jingyuan Liu, Runze Li
   - *Proceedings of The 27th International Conference on Artificial Intelligence and Statistics (AISTATS)*
-- AdaTrans: Feature-wise and Sample-wise Adaptive Transfer Learning for High-dimensional Regression (2024+) [[Paper](https://arxiv.org/abs/2403.13565)] [[Slides](files/trans-slides.pdf)] [[Poster](/files/trans-poster.pdf)] [[Talk (in Chinese)](https://www.xiong99.com.cn/p/t_pc/course_pc_detail/video/v_65fd4c40e4b0d84d784b4b1d)] 
+- AdaTrans: Feature-wise and Sample-wise Adaptive Transfer Learning for High-dimensional Regression (2024+) [[Paper](https://arxiv.org/abs/2403.13565)] [[Slides](files/trans-slides.pdf)] [[Poster](files/trans-poster.pdf)] [[Talk (in Chinese)](https://www.xiong99.com.cn/p/t_pc/course_pc_detail/video/v_65fd4c40e4b0d84d784b4b1d)] 
   - Zelin He, Ying Sun, Jingyuan Liu, Runze Li
 
 >  📧 If you're interested in my research, don't hesitate to send me an email!! Let's chat more about it.
