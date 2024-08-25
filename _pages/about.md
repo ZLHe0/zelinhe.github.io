@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am currently pursuing my Ph.D. in Statistics at Penn State. This summer, I will be joining [Amazon](https://www.amazon.jobs/content/en/career-programs/student-programs) as a research scientist intern. I am advised by Dr. [Runze Li](https://runzelipsu.github.io/) and in collaboration with Dr. [Ying Sun](https://ysunac.github.io/) from the EECS department. My current research focuses on designing transfer learning methods for high-dimensional dataset modeling under crowd-sourcing settings.
+I am currently pursuing my Ph.D. in Statistics at Penn State. This summer, I am joining [Amazon](https://www.amazon.jobs/content/en/career-programs/student-programs) as a applied scientist intern. I am advised by Dr. [Runze Li](https://runzelipsu.github.io/) and in collaboration with Dr. [Ying Sun](https://ysunac.github.io/) from the EECS department. My current research focuses on designing transfer learning methods for high-dimensional dataset modeling under crowd-sourcing settings.
 
 ## Publications and Preprints
 - TransFusion: Covariate-Shift Robust Transfer Learning for High-Dimensional Regression (2024) [[Paper](https://proceedings.mlr.press/v238/he24a.html)] [[Code](https://github.com/ZLHe0/TransFusion)]
