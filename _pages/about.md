@@ -7,9 +7,12 @@ redirect_from:
   - /about.html
 ---
 
-I am currently pursuing my Ph.D. in Statistics at Penn State. This summer, I am joining [Amazon](https://www.amazon.jobs/content/en/career-programs/student-programs) as a applied scientist intern. I am advised by Dr. [Runze Li](https://runzelipsu.github.io/) and in collaboration with Dr. [Ying Sun](https://ysunac.github.io/) from the EECS department. My current research focuses on designing transfer learning methods for high-dimensional dataset modeling under crowd-sourcing settings.
+I am currently pursuing my Ph.D. in Statistics at Penn State. This summer, I joined [Amazon](https://www.amazon.jobs/content/en/career-programs/student-programs) as an applied scientist intern, working on using time-series foundation models for anomaly detection. I am advised by Dr. [Runze Li](https://runzelipsu.github.io/) and in collaboration with Dr. [Ying Sun](https://ysunac.github.io/) from the EECS department. My current research focuses on designing transfer-learning/meta-learning methods for large-scale dataset modeling under crowd-sourcing settings.
 
 ## Publications and Preprints
+- Weakly-supervised Multi-sensor Anomaly Detection with Time-series Foundation Models (2024+)
+  - Zelin He, Matthew Reimherr, Sarah Alnegheimish, Akash Chandrayan
+  - *NeurIPS 2024 TSALM Workshop*
 - TransFusion: Covariate-Shift Robust Transfer Learning for High-Dimensional Regression (2024) [[Paper](https://proceedings.mlr.press/v238/he24a.html)] [[Code](https://github.com/ZLHe0/TransFusion)]
   - Zelin He, Ying Sun, Jingyuan Liu, Runze Li
   - *Proceedings of The 27th International Conference on Artificial Intelligence and Statistics (AISTATS)*
