@@ -18,8 +18,8 @@ I am currently pursuing my Ph.D. in Statistics at Penn State. This summer, I joi
   - *Proceedings of The 27th International Conference on Artificial Intelligence and Statistics (AISTATS)*
 - AdaTrans: Feature-wise and Sample-wise Adaptive Transfer Learning for High-dimensional Regression (2024+) [[Paper](https://arxiv.org/abs/2403.13565)] [[Slides](files/trans-slides.pdf)] [[Poster](files/trans-poster.pdf)] [[Talk (in Chinese)](https://www.xiong99.com.cn/p/t_pc/course_pc_detail/video/v_65fd4c40e4b0d84d784b4b1d)] 
   - **Zelin He**, Ying Sun, Jingyuan Liu, Runze Li
-- The Effect of Personalization in FedProx: A Fine-grained Analysis on Statistical Accuracy and Communication Efficiency (2024+)
-  - Xin Yu*, **Zelin He***, Ying Sun, Lingzhou Xue, Runze Li 
+- The Effect of Personalization in FedProx: A Fine-grained Analysis on Statistical Accuracy and Communication Efficiency (2024+) [[Paper](https://www.arxiv.org/abs/2410.08934)] [[Code](https://github.com/ZLHe0/fedprox-bilevel)]
+  - Xin Yu\*, **Zelin He\***, Ying Sun, Lingzhou Xue, Runze Li 
 
 >  📧 If you're interested in my research, don't hesitate to send me an email!! Let's chat more about it.
 
