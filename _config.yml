@@ -12,7 +12,7 @@ locale                   : "en-US"
 title                    : "Zelin's Homepage"
 title_separator          : "-"
 name                     : &name "Zelin He"
-description              : &description "PhD Student & Fellow @PSU | Ex Applied Scientist Intern @Amazon"
+description              : &description "PhD Candidate & Fellow @PSU | Applied Scientist Intern @Amazon & AWS AI"
 url                      : https://zlhe0.github.io/zelinhe.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "https://github.com/ZLHe0/zelinhe.github.io"
@@ -25,7 +25,7 @@ author:
   avatar           : "Image_Potrait.jpg"
   name             : "Zelin He"
   pronouns         : # example: "she/her"  
-  bio              : "AS Intern @Amazon | PhD Student & Fellow @PSU"
+  bio              : "AS Intern @Amazon & AWS AI | PhD Candidate & Fellow @PSU"
   location         : 
   employer         : "The Pennsylvania State University"
   uri              : # URL
