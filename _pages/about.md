@@ -9,6 +9,11 @@ redirect_from:
 
 I am a Ph.D. Candidate in Statistics at Penn State. This summer, building on my work from last summer, I will again join Amazon DST & AWS AI as an Applied Scientist intern, focusing on large language and vision-language models for time-series reasoning, working with [Boran Han](https://boranhan.github.io/) and [Matthew Reimherr](https://mreimherr.github.io/). I am advised by Dr. [Runze Li](https://runzelipsu.github.io/) and in collaboration with Dr. [Ying Sun](https://ysunac.github.io/) from the EECS department, where we develop transfer-learning and meta-learning methods for modeling large-scale, crowd-sourced datasets.
 
+<figure>
+  <img src="/images/diagram.png" alt="Siganals & Time Series Reasoning" width="100%">
+  <figcaption>Siganals & Time Series Reasoning.</figcaption>
+</figure>
+
 ## Publications and Preprints
 - Harnessing Vision-Language Models for Time Series Anomaly Detection (2025+) [[Paper](https://arxiv.org/pdf/2506.06836)]
   - **Zelin He**, Sarah Alnegheimish, Matthew Reimherr
