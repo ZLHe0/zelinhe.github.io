@@ -17,6 +17,8 @@ I am a Ph.D. Candidate at Penn State. I am closely working with Amazon DST & AWS
 ## Publications and Preprints
 - Harnessing Vision-Language Models for Time Series Anomaly Detection (2025+) [[Paper](https://arxiv.org/pdf/2506.06836)]
   - **Zelin He**, Sarah Alnegheimish, Matthew Reimherr
+  - *Proceedings of the Fortieth AAAI Conference on Artificial Intelligence (AAAI) <span style="color:blue">(Oral)</span>*
+
 - Understanding the Accuracy-Communication Trade-off in Personalized Federated Learning (2025) [[Paper](https://www.arxiv.org/abs/2410.08934)] [[Code](https://github.com/ZLHe0/fedprox-bilevel)]
   - Xin Yu\*, **Zelin He\***, Ying Sun, Lingzhou Xue, Runze Li
   - *Proceedings of The 42nd International Conference on Machine Learning (ICML)*
