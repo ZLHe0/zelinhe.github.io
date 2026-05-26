@@ -11,7 +11,6 @@ I am a Ph.D. Candidate at Penn State. I am closely working with Amazon DST & AWS
 
 <figure>
   <img src="../images/diagram.png" alt="Signals & Time Series Understanding and Reasoning" width="100%">
-  <figcaption>Signals & Time Series Understanding and Reasoning.</figcaption>
 </figure>
 
 ## Publications and Preprints
@@ -20,15 +19,15 @@ I am a Ph.D. Candidate at Penn State. I am closely working with Amazon DST & AWS
 
 - Harnessing Vision-Language Models for Time Series Anomaly Detection (2026) [[Paper](https://arxiv.org/pdf/2506.06836)] [[Code](https://github.com/ZLHe0/VLM4TS)]
   - **Zelin He**, Sarah Alnegheimish, Matthew Reimherr
-  - *Proceedings of the 40th AAAI Conference on Artificial Intelligence (AAAI 2026) <span style="color:blue">(Oral)</span>*
+  - *Proceedings of the 40th AAAI Conference on Artificial Intelligence (AAAI) <span style="color:blue">(Oral)</span>*
 
 - Beyond Heuristic Tuning: Power-Calibrated LLM Watermarking (2026)
   - Xiaopu Wang, **Zelin He**, Chengyuan Liu, Runze Li
-  - *Proceedings of the 43rd International Conference on Machine Learning (ICML 2026)*
+  - *Proceedings of the 43rd International Conference on Machine Learning (ICML)*
 
 - SenTSR-Bench: Thinking with Injected Knowledge for Time-Series Reasoning (2026) [[Paper](https://arxiv.org/abs/2602.19455)]
   - **Zelin He**, Boran Han, Xiyuan Zhang, Shuai Zhang, Haotian Lin, Qi Zhu, Haoyang Fang, Danielle C Maddix, Abdul Fatir Ansari, Akash Chandrayan, Abhinav Pradhan, Bernie Wang, Matthew Reimherr
-  - *Proceedings of The 29th International Conference on Artificial Intelligence and Statistics (AISTATS 2026)*
+  - *Proceedings of The 29th International Conference on Artificial Intelligence and Statistics (AISTATS)*
 
 - Understanding the Accuracy-Communication Trade-off in Personalized Federated Learning (2025) [[Paper](https://www.arxiv.org/abs/2410.08934)] [[Code](https://github.com/ZLHe0/fedprox-bilevel)]
   - Xin Yu\*, **Zelin He\***, Ying Sun, Lingzhou Xue, Runze Li
