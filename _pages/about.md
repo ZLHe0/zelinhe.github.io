@@ -51,9 +51,9 @@ I am a Ph.D. Candidate at Penn State. I am closely working with Amazon DST & AWS
 >  📧 If you're interested in my research, don't hesitate to send me an email!! Let's chat more about it.
 
 ## Reviewer Experience
-- ICML 2024
-- ICLR 2025
-- NeurIPS 2025
+- ICML
+- ICLR
+- NeurIPS
 - JASA
 - TNNLS
 - JCGS
