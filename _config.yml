@@ -15,7 +15,7 @@ name                     : &name "Zelin He"
 description              : &description "PhD Candidate & Fellow @PSU | Applied Scientist Intern @Amazon & AWS AI"
 url                      : https://zlhe0.github.io/zelinhe.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "https://github.com/ZLHe0/zelinhe.github.io"
+repository               : "ZLHe0/zelinhe.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.

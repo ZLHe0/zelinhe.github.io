@@ -10,11 +10,12 @@ redirect_from:
 I am a Ph.D. Candidate at Penn State. I am closely working with Amazon DST & AWS AI, focusing on LLM post-training and adaptation for agentic tasks and time-series reasoning tasks, working with [Boran Han](https://boranhan.github.io/) and [Matthew Reimherr](https://mreimherr.github.io/). I am advised by Dr. [Runze Li](https://runzelipsu.github.io/) and in collaboration with Dr. [Ying Sun](https://ysunac.github.io/) from the EECS department, where we develop transfer-learning and meta-learning methods for modeling large-scale, crowd-sourced datasets.
 
 <figure>
-  <img src="../images/diagram.png" alt="Signals & Time Series Understanding and Reasoning" width="100%">
+  <img src="../images/reskill-linkedin-card.png" alt="ReSkill: recent work on Agentic RL with Skills" width="100%">
+  <figcaption><strong>Recent work on Agentic RL with Skills:</strong> ReSkill reconciles skill creation with policy optimization so skills evolve with the policy during RL training.</figcaption>
 </figure>
 
 ## Publications and Preprints
-- ReSkill: Reconciling Skill Creation with Policy Optimization in Agentic RL (2026+)
+- ReSkill: Reconciling Skill Creation with Policy Optimization in Agentic RL (2026+) [[Website](https://amazon-science.github.io/reskill/)] [[Paper](https://arxiv.org/abs/2606.01619)] [[Code](https://github.com/amazon-science/reskill)]
   - **Zelin He**, Haotian Lin, Boran Han, Wei Zhu, Haoyang Fang, Bernie Wang, Xuan Zhu, Runze Li, Matthew Reimherr
 
 - Harnessing Vision-Language Models for Time Series Anomaly Detection (2026) [[Paper](https://arxiv.org/pdf/2506.06836)] [[Code](https://github.com/ZLHe0/VLM4TS)]
