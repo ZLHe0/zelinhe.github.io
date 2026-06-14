@@ -6,11 +6,12 @@ redirect_from:
   - /about/
   - /about.html
 ---
+{% include base_path %}
 
 I am a Ph.D. Candidate at Penn State. I am closely working with Amazon DST & AWS AI, focusing on LLM post-training and adaptation for agentic tasks and time-series reasoning tasks, working with [Boran Han](https://boranhan.github.io/) and [Matthew Reimherr](https://mreimherr.github.io/). I am advised by Dr. [Runze Li](https://runzelipsu.github.io/) and in collaboration with Dr. [Ying Sun](https://ysunac.github.io/) from the EECS department, where we develop transfer-learning and meta-learning methods for modeling large-scale, crowd-sourced datasets.
 
 <figure>
-  <img src="../images/reskill-linkedin-card.png" alt="ReSkill: recent work on Agentic RL with Skills" width="100%">
+  <img src="{{ base_path }}/images/reskill-linkedin-card.png" alt="ReSkill: recent work on Agentic RL with Skills" width="100%">
   <figcaption><strong>Recent work on Agentic RL with Skills:</strong> ReSkill reconciles skill creation with policy optimization so skills evolve with the policy during RL training.</figcaption>
 </figure>
 
