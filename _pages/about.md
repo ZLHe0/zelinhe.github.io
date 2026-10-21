@@ -18,7 +18,7 @@ Most of this happened in industry. Over four internships at AWS and LinkedIn I p
 
 <div class="xp-entry">
   <div class="xp-when">May 2026 – now
-    <span class="xp-logo"><img src="{{ base_path }}/images/logos/linkedin.svg" alt="LinkedIn"></span>
+    <span class="xp-logo sq"><img src="{{ base_path }}/images/logos/linkedin.svg" alt="LinkedIn"></span>
     <span class="xp-team">Agentic Modeling &amp; Foundation Team</span></div>
   <div class="xp-what">
     <h3>Training infrastructure and recursive harness optimization</h3>
@@ -36,7 +36,7 @@ Most of this happened in industry. Over four internships at AWS and LinkedIn I p
 
 <div class="xp-entry">
   <div class="xp-when">Feb – May 2026
-    <span class="xp-logo"><img src="{{ base_path }}/images/logos/aws.svg" alt="AWS"></span>
+    <span class="xp-logo fill"><img src="{{ base_path }}/images/logos/aws.svg" alt="AWS"></span>
     <span class="xp-team">Model Customization</span></div>
   <div class="xp-what">
     <h3>ReSkill: skills that evolve with the policy</h3>
@@ -54,7 +54,7 @@ Most of this happened in industry. Over four internships at AWS and LinkedIn I p
 
 <div class="xp-entry">
   <div class="xp-when">May – Sept 2025
-    <span class="xp-logo"><img src="{{ base_path }}/images/logos/aws.svg" alt="AWS"></span>
+    <span class="xp-logo fill"><img src="{{ base_path }}/images/logos/aws.svg" alt="AWS"></span>
     <span class="xp-team">AutoML (AutoGluon)</span></div>
   <div class="xp-what">
     <h3>SenTSR-Bench: thinking with injected knowledge</h3>
