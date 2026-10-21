@@ -12,7 +12,7 @@ redirect_from:
 
 My work centers on co-optimizing the harness (memory, skills, context compression, middleware) with the policy (SFT, RL, on-policy distillation), for real-world performance that generalizes, at minimal training cost and with efficient inference.
 
-This line runs through two consecutive projects at AWS AI Labs, on [context injection](https://github.com/ZLHe0/SenTSR-Bench) and on [skill optimization with RL training](https://github.com/amazon-science/reskill), to my recent work at LinkedIn AMF, where I built both the training infrastructure and the method for RL with a data-driven, evolving harness. Applications range from coding, web shopping and scientific discovery to industrial end-to-end agentic search. I'm advised by Dr. [Runze Li](https://runzelipsu.github.io/) and work with Dr. [Ying Sun](https://ysunac.github.io/) (EECS).
+This line runs through two consecutive projects at AWS AI Labs, on context injection and on [skill optimization with RL training](https://github.com/amazon-science/reskill), to my recent work at LinkedIn AMF, where I built both the training infrastructure and the method for RL with a data-driven, evolving harness. Applications range from coding, web shopping and scientific discovery to industrial end-to-end agentic search. I'm advised by Dr. [Runze Li](https://runzelipsu.github.io/) and work with Dr. [Ying Sun](https://ysunac.github.io/) (EECS).
 
 <h2 id="experience">Experience</h2>
 
