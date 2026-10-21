@@ -25,11 +25,10 @@ This line runs through two consecutive projects at AWS AI Labs, on context injec
   <div class="xp-what">
     <h3>Training infrastructure and recursive harness optimization</h3>
     <p class="xp-role">AI/ML Engineer Intern</p>
-    <p>The harness decides what an agent sees of its own history and what guidance it gets. It is usually hand-written and frozen during RL. My work treats it as something the system learns.</p>
+    
     <ul>
-      <li>Built a harness-transparent LLM gateway between agent applications and model serving. It records every model call as one token-level trace for SFT and RL, and is deployed for LinkedIn's production post-training.</li>
-      <li>CoHarness-RL recasts the harness as programs over a typed state, with a compression program that builds the context and a steering program that gives advice when behavior drifts. Candidates are proposed from trajectories and replayed over past ones before adoption.</li>
-      <li>Beat memory, skill, prompt and harness-evolution baselines by 5 to 12% on held-out CodeSearch, with compression close to frontier-model compaction at over 100x fewer teacher calls.</li>
+      <li>Designed the harness as learnable programs, and built the training infrastructure around it that turns every model call into SFT and RL data, deployed for LinkedIn's production post-training.</li>
+      <li>The harness evolves with the policy and is replayed over past trajectories before adoption, beating strong baselines by 5 to 12% on coding tasks at over 100x lower teacher cost.</li>
     </ul>
     <div class="xp-links"><span class="venue">Under review</span><span class="soon">Paper coming soon</span></div>
     <figure class="xp-fig"><img src="{{ base_path }}/images/work/coharness.png" alt="A raw transcript passes through compression and steering programs to produce an updated transcript"><figcaption>CoHarness-RL treats the harness as compression and steering programs over the interaction state.</figcaption></figure>
@@ -44,10 +43,8 @@ This line runs through two consecutive projects at AWS AI Labs, on context injec
     <h3>ReSkill <span class="xp-tag">Skills that evolve with the policy</span></h3>
     <p class="xp-role">Applied Scientist Intern</p>
     <ul>
-      <li>A skill creator diagnoses failures from past experience and proposes trigger-based skill edits. Each new version has to win a counterfactual A/B test inside GRPO's rollout groups before it is adopted.</li>
-      <li>Thompson sampling with an adaptive discount decides which skill version to use as the policy keeps changing.</li>
-      <li>+14.5% over the GRPO baseline, against +8.6% for the strongest of eight baselines, with the largest gains on unseen tasks.</li>
-      <li>Also shipped a five-stage multi-agent workflow built on Strands, at 98% accuracy and 5x labeler speed across 50+ facility launches.</li>
+      <li>Skills are created from the agent's own failures and must win an A/B test inside GRPO's rollout groups before they are kept.</li>
+      <li>+14.5% over GRPO, against +8.6% for the strongest of eight baselines, with the largest gains on unseen tasks.</li>
     </ul>
     <div class="xp-links"><span class="venue">Under review</span><a href="https://amazon-science.github.io/reskill/">Project page</a><a href="https://arxiv.org/abs/2606.01619">Paper</a><a href="https://github.com/amazon-science/reskill">Code</a></div>
     <figure class="xp-fig"><img src="{{ base_path }}/images/work/reskill.jpg" alt="ReSkill overview"><figcaption>ReSkill reconciles skill creation with policy optimization.</figcaption></figure>
@@ -62,9 +59,7 @@ This line runs through two consecutive projects at AWS AI Labs, on context injec
     <h3>SenTSR-Bench <span class="xp-tag">Thinking with injected knowledge</span></h3>
     <p class="xp-role">Applied Scientist Intern</p>
     <ul>
-      <li>Built a benchmark for diagnostic reasoning on production sensor data, with a VLM-driven synthetic-data pipeline that scales training data 260x.</li>
-      <li>A small time-series model, trained with SFT and RL, writes its analysis straight into a frozen reasoning model's thinking, reaching +11.2% accuracy over Claude 3.7 and Qwen3.</li>
-      <li>Piloted the system with 5x faster inference than comparable commercial model APIs.</li>
+      <li>A small time-series model trained with SFT and RL injects its analysis into a frozen reasoning model's thinking, reaching +11.2% accuracy over Claude 3.7 and Qwen3 on a benchmark built from production sensor data.</li>
     </ul>
     <div class="xp-links"><span class="venue">AISTATS 2026</span><a href="https://arxiv.org/abs/2602.19455">Paper</a><a href="https://github.com/ZLHe0/SenTSR-Bench">Code</a></div>
     <figure class="xp-fig"><img src="{{ base_path }}/images/work/sentsr.png" alt="Knowledge injection from a time-series LM into a reasoning LM"><figcaption>Knowledge injection, and the RL loop that hones the specialist's thinking traces.</figcaption></figure>
@@ -79,8 +74,7 @@ This line runs through two consecutive projects at AWS AI Labs, on context injec
     <h3>VLM4TS <span class="xp-tag">Vision-language models for anomaly detection</span></h3>
     <p class="xp-role">Applied Scientist Intern</p>
     <ul>
-      <li>A lightweight Vision Transformer screens sensor data and a vision-language model verifies the flagged windows, lifting F1 by 24.6% at 36x lower token cost.</li>
-      <li>Evaluated on 130 assets at Amazon fulfillment centers and three public benchmarks.</li>
+      <li>A lightweight Vision Transformer screens sensor data and a vision-language model verifies flagged windows, lifting F1 by 24.6% at 36x lower token cost across 130 Amazon fulfillment-center assets.</li>
     </ul>
     <div class="xp-links"><span class="venue">AAAI 2026 Oral</span><a href="https://arxiv.org/pdf/2506.06836">Paper</a><a href="https://github.com/ZLHe0/VLM4TS">Code</a></div>
     <figure class="xp-fig"><img src="{{ base_path }}/images/work/vlm4ts.jpg" alt="VLM4TS pipeline with anomaly scores and a performance comparison"><figcaption>Visual screening, then visual reasoning.</figcaption></figure>
