@@ -16,6 +16,7 @@
 .xp-what {
   min-width: 0;
   h3 { margin: 0 0 0.15em; font-size: $type-size-5; }
+  .xp-tag { font-weight: 400; color: $gray; margin-left: 0.35em; }
   .xp-role { margin: 0 0 0.6em; font-size: $type-size-6; color: $gray; }
   p, ul { font-size: $type-size-5; margin-bottom: 0.6em; }
   ul { padding-left: 1.2em; }

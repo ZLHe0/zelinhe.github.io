@@ -8,9 +8,11 @@ redirect_from:
 ---
 {% include base_path %}
 
-I am a final-year Ph.D. candidate in Statistics (Machine Learning) at Penn State, finishing in December 2026. I build training loops that let LLM agents get better on their own. In my recent work the model, its skills and its harness improve together during reinforcement learning, and a change is kept only when it measurably helps.
+**I'm Zelin He, a final-year Ph.D. candidate at Penn State working on end-to-end LLM agent training and development.**
 
-Most of this happened in industry. Over four internships at AWS and LinkedIn I post-trained models with SFT and RL, and built the infrastructure underneath them: the gateway that turns agent runs into training data, and the replay system that tests a harness change against past behavior before it ships. Before agents, I worked on multimodal reasoning over sensor data and on statistical methods for transfer and federated learning, advised by Dr. [Runze Li](https://runzelipsu.github.io/) and in collaboration with Dr. [Ying Sun](https://ysunac.github.io/) (EECS).
+My work centers on co-optimizing the harness (memory, skills, context compression, middleware) with the policy (SFT, RL, on-policy distillation), for real-world performance that generalizes, at minimal training cost and with efficient inference.
+
+This line runs through two consecutive projects at AWS AI Labs, on context injection and on skill optimization with RL training ([ReSkill](https://github.com/amazon-science/reskill)), to my recent work at LinkedIn, where I built both the training infrastructure and the method for RL with a data-driven, evolving harness. Applications range from coding, web shopping and scientific discovery to industrial end-to-end agentic search. I'm advised by Dr. [Runze Li](https://runzelipsu.github.io/) and work with Dr. [Ying Sun](https://ysunac.github.io/) (EECS).
 
 <h2 id="experience">Experience</h2>
 
@@ -26,11 +28,11 @@ Most of this happened in industry. Over four internships at AWS and LinkedIn I p
     <p>The harness decides what an agent sees of its own history and what guidance it gets. It is usually hand-written and frozen during RL. My work treats it as something the system learns.</p>
     <ul>
       <li>Built a harness-transparent LLM gateway between agent applications and model serving. It records every model call as one token-level trace for SFT and RL, and is deployed for LinkedIn's production post-training.</li>
-      <li>CoHarness-RL recasts the harness as programs over a typed state: a compression program that builds the context and a steering program that gives advice when behavior drifts. Candidates are proposed from trajectories and replayed over past ones before adoption.</li>
+      <li>CoHarness-RL recasts the harness as programs over a typed state, with a compression program that builds the context and a steering program that gives advice when behavior drifts. Candidates are proposed from trajectories and replayed over past ones before adoption.</li>
       <li>Beat memory, skill, prompt and harness-evolution baselines by 5 to 12% on held-out CodeSearch, with compression close to frontier-model compaction at over 100x fewer teacher calls.</li>
     </ul>
     <div class="xp-links"><span class="venue">Under review</span><span class="soon">Paper coming soon</span></div>
-    <figure class="xp-fig"><img src="{{ base_path }}/images/work/coharness.png" alt="A raw transcript passes through compression and steering programs to produce an updated transcript"><figcaption>CoHarness-RL: the harness as compression and steering programs over the interaction state.</figcaption></figure>
+    <figure class="xp-fig"><img src="{{ base_path }}/images/work/coharness.png" alt="A raw transcript passes through compression and steering programs to produce an updated transcript"><figcaption>CoHarness-RL treats the harness as compression and steering programs over the interaction state.</figcaption></figure>
   </div>
 </div>
 
@@ -39,7 +41,7 @@ Most of this happened in industry. Over four internships at AWS and LinkedIn I p
     <span class="xp-logo fill"><img src="{{ base_path }}/images/logos/aws.svg" alt="AWS"></span>
     <span class="xp-team">Model Customization</span></div>
   <div class="xp-what">
-    <h3>ReSkill: skills that evolve with the policy</h3>
+    <h3>ReSkill <span class="xp-tag">Skills that evolve with the policy</span></h3>
     <p class="xp-role">Applied Scientist Intern</p>
     <ul>
       <li>A skill creator diagnoses failures from past experience and proposes trigger-based skill edits. Each new version has to win a counterfactual A/B test inside GRPO's rollout groups before it is adopted.</li>
@@ -57,11 +59,11 @@ Most of this happened in industry. Over four internships at AWS and LinkedIn I p
     <span class="xp-logo fill"><img src="{{ base_path }}/images/logos/aws.svg" alt="AWS"></span>
     <span class="xp-team">AutoML (AutoGluon)</span></div>
   <div class="xp-what">
-    <h3>SenTSR-Bench: thinking with injected knowledge</h3>
+    <h3>SenTSR-Bench <span class="xp-tag">Thinking with injected knowledge</span></h3>
     <p class="xp-role">Applied Scientist Intern</p>
     <ul>
       <li>Built a benchmark for diagnostic reasoning on production sensor data, with a VLM-driven synthetic-data pipeline that scales training data 260x.</li>
-      <li>A small time-series model, trained with SFT and RL, writes its analysis straight into a frozen reasoning model's thinking: +11.2% accuracy over Claude 3.7 and Qwen3.</li>
+      <li>A small time-series model, trained with SFT and RL, writes its analysis straight into a frozen reasoning model's thinking, reaching +11.2% accuracy over Claude 3.7 and Qwen3.</li>
       <li>Piloted the system with 5x faster inference than comparable commercial model APIs.</li>
     </ul>
     <div class="xp-links"><span class="venue">AISTATS 2026</span><a href="https://arxiv.org/abs/2602.19455">Paper</a><a href="https://github.com/ZLHe0/SenTSR-Bench">Code</a></div>
@@ -74,10 +76,10 @@ Most of this happened in industry. Over four internships at AWS and LinkedIn I p
     <span class="xp-logo"><img src="{{ base_path }}/images/logos/amazon.svg" alt="Amazon"></span>
     <span class="xp-team">IntelliHub</span></div>
   <div class="xp-what">
-    <h3>VLM4TS: vision-language models for anomaly detection</h3>
+    <h3>VLM4TS <span class="xp-tag">Vision-language models for anomaly detection</span></h3>
     <p class="xp-role">Applied Scientist Intern</p>
     <ul>
-      <li>A lightweight Vision Transformer screens sensor data and a vision-language model verifies the flagged windows: +24.6% F1 at 36x lower token cost.</li>
+      <li>A lightweight Vision Transformer screens sensor data and a vision-language model verifies the flagged windows, lifting F1 by 24.6% at 36x lower token cost.</li>
       <li>Evaluated on 130 assets at Amazon fulfillment centers and three public benchmarks.</li>
     </ul>
     <div class="xp-links"><span class="venue">AAAI 2026 Oral</span><a href="https://arxiv.org/pdf/2506.06836">Paper</a><a href="https://github.com/ZLHe0/VLM4TS">Code</a></div>
