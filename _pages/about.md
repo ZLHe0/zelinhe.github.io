@@ -8,7 +8,7 @@ redirect_from:
 ---
 {% include base_path %}
 
-**I'm Zelin He, a final-year Ph.D. candidate at Penn State working on end-to-end LLM agent training and development.**
+**I'm Zelin He, a final-year Ph.D. candidate at Penn State. I work on end-to-end LLM agent training and development.**
 
 My work centers on co-optimizing the harness (memory, skills, context compression, middleware) with the policy (SFT, RL, on-policy distillation), for real-world performance that generalizes, at minimal training cost and with efficient inference.
 
