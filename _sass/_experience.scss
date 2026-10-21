@@ -1,0 +1,31 @@
+/* Experience-led homepage additions (2026-10 redesign). Uses the theme's own fonts and colors. */
+.xp { margin-top: 0.5em; }
+.xp-entry {
+  display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 1.4em;
+  padding: 1.4em 0; border-top: 1px solid $border-color;
+  &:first-child { border-top: 0; padding-top: 0.4em; }
+  @include breakpoint(max-width $medium) { grid-template-columns: 1fr; gap: 0.6em; }
+}
+.xp-when { font-size: $type-size-6; color: $gray; line-height: 1.5; }
+.xp-logo { display: block; height: 28px; margin-top: 0.6em;
+  img { height: 100%; width: auto; max-width: 110px; display: block; } }
+.xp-team { display: block; margin-top: 0.4em; font-size: $type-size-6; color: $gray; }
+.xp-what {
+  min-width: 0;
+  h3 { margin: 0 0 0.15em; font-size: $type-size-5; }
+  .xp-role { margin: 0 0 0.6em; font-size: $type-size-6; color: $gray; }
+  p, ul { font-size: $type-size-5; margin-bottom: 0.6em; }
+  ul { padding-left: 1.2em; }
+  li { margin-bottom: 0.3em; }
+}
+.xp-links { display: flex; flex-wrap: wrap; gap: 0.5em; margin: 0.6em 0; font-size: $type-size-6;
+  a, span { padding: 0.15em 0.7em; border: 1px solid $border-color; border-radius: 999px; text-decoration: none; }
+  .venue { border-color: transparent; background: mix(#fff, $primary-color, 88%); color: $primary-color; border-radius: 4px; }
+  .soon { color: $gray; border-style: dashed; }
+}
+.xp-fig { margin: 0.6em 0 0; border: 1px solid $border-color; border-radius: 6px; overflow: hidden;
+  img { display: block; width: 100%; height: auto; }
+  figcaption { font-family: $sans-serif; font-size: $type-size-7; color: $gray; padding: 0.5em 0.8em; margin: 0; width: 100%; max-width: none; border: 0; border-top: 1px solid $border-color;
+    &::before, &::after { display: none; content: none; } }
+}
+.chat-note { font-size: $type-size-5; .mail { font-family: $monospace; } }

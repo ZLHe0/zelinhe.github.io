@@ -12,7 +12,7 @@ locale                   : "en-US"
 title                    : "Zelin's Homepage"
 title_separator          : "-"
 name                     : &name "Zelin He"
-description              : &description "PhD Candidate & Fellow @PSU | Applied Scientist Intern @Amazon & AWS AI"
+description              : &description "Final-year Ph.D. candidate at Penn State working on self-improving LLM agents, agentic RL and post-training"
 url                      : https://zlhe0.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/zelinhe.github.io" # the subpath of your site, e.g. "/blog"
 repository               : "ZLHe0/zelinhe.github.io"
@@ -25,11 +25,11 @@ author:
   avatar           : "Image_Potrait.jpg"
   name             : "Zelin He"
   pronouns         : # example: "she/her"  
-  bio              : "AS Intern @Amazon & AWS AI | PhD Candidate & Fellow @PSU"
+  bio              : "Final-year Ph.D. candidate @ Penn State | Agentic RL and post-training"
   location         : 
   employer         :
   uri              : # URL
-  email            : "zlhe@psu.edu" 
+  email            : "zelinhe0@outlook.com"
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
@@ -43,7 +43,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : # "academicpages"
+  github           : "ZLHe0"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
