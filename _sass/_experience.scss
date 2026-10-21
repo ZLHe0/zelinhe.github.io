@@ -11,7 +11,7 @@
 .xp-logo { display: flex; align-items: center; justify-content: center; width: 120px; height: 48px; margin-top: 0.6em;
   img { display: block; width: 100%; height: auto; max-height: 100%; object-fit: contain; }
   &.sq { height: 60px; img { width: auto; height: 58px; max-height: none; } }
-  &.fill { height: auto; img { width: 100%; max-height: none; } } }
+  &.fill { height: auto; img { width: 84px; max-height: none; } } }
 .xp-team { display: block; margin-top: 0.5em; font-size: $type-size-6; color: $gray; }
 .xp-what {
   min-width: 0;
