@@ -144,7 +144,7 @@ Full list on [Google Scholar](https://scholar.google.com/citations?user=cqhRdPoA
 <h2 id="chat">Let's chat</h2>
 
 <div class="chat-note">
-<p>I'm always glad to talk about agents, reinforcement learning and post-training. If something here connects with what you're working on, send me a note at <span class="mail">zelinhe0@outlook.com</span>.</p>
+<p>I'm always glad to talk about agents, reinforcement learning and post-training. If something here connects with what you're working on, send me a note at <span class="mail">zelinhe0@gmail.com</span>.</p>
 </div>
 
 ## Education
