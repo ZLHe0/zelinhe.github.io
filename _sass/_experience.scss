@@ -1,18 +1,21 @@
 /* Experience-led homepage additions (2026-10 redesign). Uses the theme's own fonts and colors. */
 .xp { margin-top: 0.5em; }
 .xp-entry {
-  display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 1.4em;
+  display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 1.1em;
   padding: 1.4em 0; border-top: 1px solid $border-color;
   &:first-child { border-top: 0; padding-top: 0.4em; }
   @include breakpoint(max-width $medium) { grid-template-columns: 1fr; gap: 0.6em; }
 }
-.xp-when { font-size: $type-size-6; color: $gray; line-height: 1.5; width: 120px; text-align: center;
-  @include breakpoint(max-width $medium) { text-align: left; } }
-.xp-logo { display: flex; align-items: center; justify-content: center; width: 120px; height: 48px; margin-top: 0.6em;
+/* Left column reads top to bottom: logo, team, lead, dates. */
+.xp-org { display: flex; flex-direction: column; align-items: center; width: 180px; text-align: center; line-height: 1.35;
+  @include breakpoint(max-width $medium) { align-items: flex-start; text-align: left; } }
+.xp-team { margin-top: 0.55em; font-size: 0.875em; font-weight: 600; color: $text-color; }
+.xp-lead { margin-top: 0.2em; font-size: 0.8125em; color: $gray; }
+.xp-time { margin-top: 0.35em; font-size: 0.8125em; color: $gray; }
+.xp-logo { display: flex; align-items: center; justify-content: center; width: 120px; height: 48px;
   img { display: block; width: 100%; height: auto; max-height: 100%; object-fit: contain; }
   &.sq { height: 60px; img { width: auto; height: 58px; max-height: none; } }
   &.fill { height: auto; img { width: 84px; max-height: none; } } }
-.xp-team { display: block; margin-top: 0.5em; font-size: $type-size-6; color: $gray; }
 .xp-what {
   min-width: 0;
   h3 { margin: 0 0 0.15em; font-size: $type-size-5; }
@@ -33,3 +36,13 @@
     &::before, &::after { display: none; content: none; } }
 }
 .chat-note { font-size: $type-size-5; .mail { font-family: $monospace; } }
+
+/* Publication list: title, short author line, short venue, link pills. */
+.pubs { display: flex; flex-direction: column; gap: 1.1em; margin: 0.8em 0 1em; }
+.pub { font-size: $type-size-5; line-height: 1.45; .xp-links { margin: 0.35em 0 0; } }
+.pub-title { font-weight: 700; color: $text-color; }
+.pub-authors { margin-top: 0.1em; font-size: 0.875em; color: $dark-gray; }
+.pub-venue { margin-top: 0.1em; font-size: 0.875em; color: $gray;
+  strong { color: $text-color; } .oral { color: #c0392b; } }
+.pub-more { margin-top: 0.5em; summary { cursor: pointer; font-size: $type-size-5; color: $primary-color; } }
+.pub-note { font-size: $type-size-6; color: $gray; }

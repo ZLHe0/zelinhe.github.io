@@ -12,84 +12,94 @@ redirect_from:
 
 My work centers on co-optimizing the harness (memory, skills, context compression, middleware) with the policy (SFT, RL, on-policy distillation), for real-world performance that generalizes, at minimal training cost and with efficient inference.
 
-This line runs through two consecutive projects at AWS AI Labs, on context injection and on [skill optimization with RL training](https://github.com/amazon-science/reskill), to my recent work at LinkedIn AMF, where I built both the training infrastructure and the method for RL with a data-driven, evolving harness. Applications range from coding, web shopping and scientific discovery to industrial end-to-end agentic search.
+This line runs through two projects at AWS AI Labs, on context injection and on [skill optimization with RL training](https://github.com/amazon-science/reskill), to my recent work at LinkedIn AMF, where I built both the training infrastructure and the method for RL with a data-driven, evolving harness. Applications range from coding, web shopping and scientific discovery to industrial end-to-end agentic search.
 
 <h2 id="experience">Experience</h2>
 
 <div class="xp">
 
 <div class="xp-entry">
-  <div class="xp-when">May 2026 – now
+  <div class="xp-org">
     <span class="xp-logo sq"><img src="{{ base_path }}/images/logos/linkedin.svg" alt="LinkedIn"></span>
-    <span class="xp-team">Agentic Modeling &amp; Foundation Team</span></div>
+    <span class="xp-team">Agentic Modeling &amp; Foundation Team</span>
+    <span class="xp-lead">led by <a href="https://code-terminator.github.io/">Shiyu Chang</a></span>
+    <span class="xp-time">May 2026 – now</span></div>
   <div class="xp-what">
     <h3>Training infrastructure and recursive harness optimization</h3>
     <p class="xp-role">AI/ML Engineer Intern</p>
     
     <ul>
-      <li>Designed the harness as learnable programs, and built the training infrastructure around it that turns every model call into SFT and RL data, deployed for LinkedIn's production post-training.</li>
-      <li>The harness evolves with the policy and is replayed over past trajectories before adoption, beating strong baselines by 5 to 12% on coding tasks at over 100x lower teacher cost.</li>
+      <li>Recast the harness as configurable programs an LLM learns from experience, on harness-agnostic infrastructure that faithfully traces every model call for training and inference.</li>
+      <li>Evolving with the model in RL, it steps in only where the model can't improve alone, beating strong baselines by 5 to 12% on coding and nearing frontier-model compaction at a fraction of the cost.</li>
     </ul>
-    <div class="xp-links"><span class="venue">Under review</span><span class="soon">Paper coming soon</span></div>
-    <figure class="xp-fig"><img src="{{ base_path }}/images/work/coharness.png" alt="A raw transcript passes through compression and steering programs to produce an updated transcript"><figcaption>CoHarness-RL treats the harness as compression and steering programs over the interaction state.</figcaption></figure>
+    <div class="xp-links"><span class="soon">Paper coming soon</span></div>
+    <figure class="xp-fig"><img src="{{ base_path }}/images/work/coharness_infra.png" alt="Harness optimization, a rollout service with gateway nodes and an inference engine, and policy optimization with a trainer"></figure>
   </div>
 </div>
 
 <div class="xp-entry">
-  <div class="xp-when">Feb – May 2026
+  <div class="xp-org">
     <span class="xp-logo fill"><img src="{{ base_path }}/images/logos/aws.svg" alt="AWS"></span>
-    <span class="xp-team">Model Customization</span></div>
+    <span class="xp-team">AWS AI Labs<br>(Model Customization)</span>
+    <span class="xp-lead">led by <a href="https://www.ischool.berkeley.edu/people/jennifer-zhu">Jennifer Zhu</a></span>
+    <span class="xp-time">Feb – May 2026</span></div>
   <div class="xp-what">
-    <h3>ReSkill <span class="xp-tag">Skills that evolve with the policy</span></h3>
+    <h3>Skill and policy co-evolution in agentic RL</h3>
     <p class="xp-role">Applied Scientist Intern</p>
     <ul>
-      <li>Skills are created from the agent's own failures and must win an A/B test inside GRPO's rollout groups before they are kept.</li>
-      <li>+14.5% over GRPO, against +8.6% for the strongest of eight baselines, with the largest gains on unseen tasks.</li>
+      <li>Brings end-to-end skill creation into RL, writing skills from agent failures and A/B testing versions within GRPO's rollout groups, where Thompson Sampling keeps winners at no extra rollout cost.</li>
+      <li>Beats strong RL baselines in all five domains by 5.6 points on average (1.3 to 15.8), and by up to 21.9 on out-of-domain tasks.</li>
     </ul>
-    <div class="xp-links"><span class="venue">Under review</span><a href="https://amazon-science.github.io/reskill/">Project page</a><a href="https://arxiv.org/abs/2606.01619">Paper</a><a href="https://github.com/amazon-science/reskill">Code</a></div>
-    <figure class="xp-fig"><img src="{{ base_path }}/images/work/reskill.jpg" alt="ReSkill overview"><figcaption>ReSkill reconciles skill creation with policy optimization.</figcaption></figure>
+    <div class="xp-links"><a href="https://arxiv.org/abs/2606.01619">Paper</a><a href="https://github.com/amazon-science/reskill">Code</a></div>
+    <figure class="xp-fig"><img src="{{ base_path }}/images/work/reskill_pipeline.png" alt="ReSkill pipeline with within-group skill testing, the skill creator, and adaptive Thompson Sampling"></figure>
   </div>
 </div>
 
 <div class="xp-entry">
-  <div class="xp-when">May – Sept 2025
+  <div class="xp-org">
     <span class="xp-logo fill"><img src="{{ base_path }}/images/logos/aws.svg" alt="AWS"></span>
-    <span class="xp-team">AutoML (AutoGluon)</span></div>
+    <span class="xp-team">AWS AI Labs<br>(AutoML)</span>
+    <span class="xp-lead">led by <a href="https://www.mit.edu/~ywang02/">Bernie Wang</a></span>
+    <span class="xp-time">May – Sept 2025</span></div>
   <div class="xp-what">
-    <h3>SenTSR-Bench <span class="xp-tag">Thinking with injected knowledge</span></h3>
+    <h3>Injecting fine-tuned expert knowledge into frontier reasoning</h3>
     <p class="xp-role">Applied Scientist Intern</p>
     <ul>
-      <li>A small time-series model trained with SFT and RL injects its analysis into a frozen reasoning model's thinking, reaching +11.2% accuracy over Claude 3.7 and Qwen3 on a benchmark built from production sensor data.</li>
+      <li>Pairs a frozen frontier model with a small fine-tuned domain expert by writing the expert's analysis into the frontier model's thinking, so it builds on that evidence or corrects it.</li>
+      <li>RL trains the expert to write analysis worth injecting, without human annotation, beating either model alone by 8 to 26%.</li>
     </ul>
-    <div class="xp-links"><span class="venue">AISTATS 2026</span><a href="https://arxiv.org/abs/2602.19455">Paper</a><a href="https://github.com/ZLHe0/SenTSR-Bench">Code</a></div>
-    <figure class="xp-fig"><img src="{{ base_path }}/images/work/sentsr.png" alt="Knowledge injection from a time-series LM into a reasoning LM"><figcaption>Knowledge injection, and the RL loop that hones the specialist's thinking traces.</figcaption></figure>
+    <div class="xp-links"><a href="https://arxiv.org/abs/2602.19455">Paper</a><a href="https://github.com/ZLHe0/SenTSR-Bench">Code</a></div>
+    <figure class="xp-fig"><img src="{{ base_path }}/images/work/sentsr.png" alt="Knowledge injection from a time-series LM into a reasoning LM"></figure>
   </div>
 </div>
 
 <div class="xp-entry">
-  <div class="xp-when">May – Aug 2024
+  <div class="xp-org">
     <span class="xp-logo"><img src="{{ base_path }}/images/logos/amazon.svg" alt="Amazon"></span>
-    <span class="xp-team">IntelliHub</span></div>
+    <span class="xp-team">IntelliHub</span>
+    <span class="xp-lead">led by <a href="https://mreimherr.github.io/">Matthew Reimherr</a></span>
+    <span class="xp-time">May – Aug 2024</span></div>
   <div class="xp-what">
-    <h3>VLM4TS <span class="xp-tag">Vision-language models for anomaly detection</span></h3>
+    <h3>Visual screening and VLM reasoning for anomaly detection</h3>
     <p class="xp-role">Applied Scientist Intern</p>
     <ul>
-      <li>A lightweight Vision Transformer screens sensor data and a vision-language model verifies flagged windows, lifting F1 by 24.6% at 36x lower token cost across 130 Amazon fulfillment-center assets.</li>
+      <li>A zero-shot two-stage pipeline, where a lightweight vision encoder screens the full signal in seconds on CPU and a VLM verifies only the flagged candidates in long-range context.</li>
+      <li>Lifts F1 by 24.6% over the best trained baseline on 11 benchmarks, with 36x fewer tokens than language-model methods.</li>
     </ul>
-    <div class="xp-links"><span class="venue">AAAI 2026 Oral</span><a href="https://arxiv.org/pdf/2506.06836">Paper</a><a href="https://github.com/ZLHe0/VLM4TS">Code</a></div>
-    <figure class="xp-fig"><img src="{{ base_path }}/images/work/vlm4ts.jpg" alt="VLM4TS pipeline with anomaly scores and a performance comparison"><figcaption>Visual screening, then visual reasoning.</figcaption></figure>
+    <div class="xp-links"><a href="https://arxiv.org/pdf/2506.06836">Paper</a><a href="https://github.com/ZLHe0/VLM4TS">Code</a></div>
+    <figure class="xp-fig"><img src="{{ base_path }}/images/work/vlm4ts.jpg" alt="VLM4TS pipeline with anomaly scores and a performance comparison"></figure>
   </div>
 </div>
 
 <div class="xp-entry">
-  <div class="xp-when">Aug 2022 – now
+  <div class="xp-org">
     <span class="xp-logo"><img src="{{ base_path }}/images/logos/pennstate.svg" alt="Penn State"></span>
-    <span class="xp-team">Statistics, with EECS</span></div>
+    <span class="xp-team">Statistics, with EECS</span>
+    <span class="xp-time">Aug 2022 – now</span></div>
   <div class="xp-what">
     <h3>Statistical machine learning</h3>
     <p class="xp-role">Graduate Researcher</p>
     <p>Transfer learning that stays robust under covariate shift, personalized federated learning with minimax guarantees, and a power-calibrated framework for tuning LLM watermarks.</p>
-    <div class="xp-links"><span class="venue">ICML 2026</span><span class="venue">ICML 2025</span><span class="venue">AISTATS 2024</span><span class="venue">JMLR</span></div>
   </div>
 </div>
 
@@ -97,60 +107,82 @@ This line runs through two consecutive projects at AWS AI Labs, on context injec
 
 <h2 id="papers">Selected Papers</h2>
 
-- ReSkill: Reconciling Skill Creation with Policy Optimization in Agentic RL (under review) [[Website](https://amazon-science.github.io/reskill/)] [[Paper](https://arxiv.org/abs/2606.01619)] [[Code](https://github.com/amazon-science/reskill)]
-  - **Zelin He**, Haotian Lin, Boran Han, Wei Zhu, Haoyang Fang, Bernie Wang, Xuan Zhu, Runze Li, Matthew Reimherr
-- CoHarness-RL: Recasting Harnesses as Learnable and Evolving Programs for Agentic RL (under review, coming soon)
-- Beyond Heuristic Tuning: Power-Calibrated LLM Watermarking [[Paper](https://arxiv.org/abs/2607.05694)]
-  - Xiaopu Wang, **Zelin He**, Chengyuan Liu, Runze Li
-  - *International Conference on Machine Learning (ICML), 2026*
-- Harnessing Vision-Language Models for Time Series Anomaly Detection [[Paper](https://arxiv.org/pdf/2506.06836)] [[Code](https://github.com/ZLHe0/VLM4TS)]
-  - **Zelin He**, Sarah Alnegheimish, Matthew Reimherr
-  - *AAAI Conference on Artificial Intelligence (AAAI), 2026* <span style="color:blue">(Oral)</span>
-- SenTSR-Bench: Thinking with Injected Knowledge for Time-Series Reasoning [[Paper](https://arxiv.org/abs/2602.19455)] [[Code](https://github.com/ZLHe0/SenTSR-Bench)]
-  - **Zelin He**, Boran Han, Xiyuan Zhang, Shuai Zhang, Haotian Lin, Qi Zhu, Haoyang Fang, Danielle C. Maddix, Abdul Fatir Ansari, Akash Chandrayan, Abhinav Pradhan, Bernie Wang, Matthew Reimherr
-  - *International Conference on Artificial Intelligence and Statistics (AISTATS), 2026*
-- Understanding the Statistical Accuracy-Communication Trade-off in Personalized Federated Learning with Minimax Guarantees [[Paper](https://arxiv.org/abs/2410.08934)] [[Code](https://github.com/ZLHe0/fedprox-bilevel)]
-  - Xin Yu\*, **Zelin He\***, Ying Sun, Lingzhou Xue, Runze Li
-  - *International Conference on Machine Learning (ICML), 2025*
+<div class="pubs">
+<div class="pub">
+  <div class="pub-title">ReSkill: Reconciling Skill Creation with Policy Optimization in Agentic RL</div>
+  <div class="pub-authors"><strong>Zelin He</strong>, Haotian Lin, Boran Han, Wei Zhu, Haoyang Fang, and 4 more</div>
+  <div class="pub-venue">Under review</div>
+  <div class="xp-links"><a href="https://amazon-science.github.io/reskill/">Project page</a><a href="https://arxiv.org/abs/2606.01619">Paper</a><a href="https://github.com/amazon-science/reskill">Code</a></div>
+</div>
+<div class="pub">
+  <div class="pub-title">CoHarness-RL: Recasting Harnesses as Learnable and Evolving Programs for Agentic RL</div>
+  <div class="pub-authors"><strong>Zelin He</strong>, Siyu Zhu, Jacob Helwig, Yujian Liu, Li An, and 3 more</div>
+  <div class="pub-venue">Under review</div>
+  <div class="xp-links"><span class="soon">Paper coming soon</span></div>
+</div>
+<div class="pub">
+  <div class="pub-title">Beyond Heuristic Tuning: Power-Calibrated LLM Watermarking</div>
+  <div class="pub-authors">Xiaopu Wang, <strong>Zelin He</strong>, Chengyuan Liu, Runze Li</div>
+  <div class="pub-venue"><strong>ICML</strong> 2026</div>
+  <div class="xp-links"><a href="https://arxiv.org/abs/2607.05694">Paper</a></div>
+</div>
+<div class="pub">
+  <div class="pub-title">Harnessing Vision-Language Models for Time Series Anomaly Detection</div>
+  <div class="pub-authors"><strong>Zelin He</strong>, Sarah Alnegheimish, Matthew Reimherr</div>
+  <div class="pub-venue"><strong>AAAI</strong> 2026, <strong class="oral">Oral</strong></div>
+  <div class="xp-links"><a href="https://arxiv.org/pdf/2506.06836">Paper</a><a href="https://github.com/ZLHe0/VLM4TS">Code</a></div>
+</div>
+<div class="pub">
+  <div class="pub-title">SenTSR-Bench: Thinking with Injected Knowledge for Time-Series Reasoning</div>
+  <div class="pub-authors"><strong>Zelin He</strong>, Boran Han, Xiyuan Zhang, Shuai Zhang, Haotian Lin, and 8 more</div>
+  <div class="pub-venue"><strong>AISTATS</strong> 2026</div>
+  <div class="xp-links"><a href="https://arxiv.org/abs/2602.19455">Paper</a><a href="https://github.com/ZLHe0/SenTSR-Bench">Code</a></div>
+</div>
+<div class="pub">
+  <div class="pub-title">Understanding the Statistical Accuracy-Communication Trade-off in Personalized Federated Learning with Minimax Guarantees</div>
+  <div class="pub-authors">Xin Yu*, <strong>Zelin He*</strong>, Ying Sun, Lingzhou Xue, Runze Li</div>
+  <div class="pub-venue"><strong>ICML</strong> 2025</div>
+  <div class="xp-links"><a href="https://arxiv.org/abs/2410.08934">Paper</a><a href="https://github.com/ZLHe0/fedprox-bilevel">Code</a></div>
+</div>
+<div class="pub">
+  <div class="pub-title">M<sup>2</sup>AD: Multi-Sensor Multi-System Anomaly Detection through Global Scoring and Calibrated Thresholding</div>
+  <div class="pub-authors">Sarah Alnegheimish, <strong>Zelin He</strong>, Matthew Reimherr, Akash Chandrayan, Abhinav Pradhan, Luca D'Angelo</div>
+  <div class="pub-venue"><strong>AISTATS</strong> 2025</div>
+</div>
+<div class="pub">
+  <div class="pub-title">TransFusion: Covariate-Shift Robust Transfer Learning for High-Dimensional Regression</div>
+  <div class="pub-authors"><strong>Zelin He</strong>, Ying Sun, Runze Li</div>
+  <div class="pub-venue"><strong>AISTATS</strong> 2024</div>
+  <div class="xp-links"><a href="https://proceedings.mlr.press/v238/he24a.html">Paper</a><a href="https://github.com/ZLHe0/TransFusion">Code</a></div>
+</div>
+</div>
 
-<details markdown="1">
+<details class="pub-more">
 <summary>More papers</summary>
-
-- M<sup>2</sup>AD: Multi-Sensor Multi-System Anomaly Detection through Global Scoring and Calibrated Thresholding
-  - Sarah Alnegheimish, **Zelin He**, Matthew Reimherr, Akash Chandrayan, Abhinav Pradhan, Luca D'Angelo
-  - *International Conference on Artificial Intelligence and Statistics (AISTATS), 2025*
-- TransFusion: Covariate-Shift Robust Transfer Learning for High-Dimensional Regression [[Paper](https://proceedings.mlr.press/v238/he24a.html)] [[Code](https://github.com/ZLHe0/TransFusion)]
-  - **Zelin He**, Ying Sun, Runze Li
-  - *International Conference on Artificial Intelligence and Statistics (AISTATS), 2024*
-- High-dimensional Parameter Transfer With Fused-Regularizer
-  - **Zelin He**, Ying Sun, Jingyuan Liu, Runze Li
-  - *Journal of Machine Learning Research (JMLR)*
-- Weakly-supervised Multi-sensor Anomaly Detection with Time-series Foundation Models
-  - **Zelin He**, Matthew Reimherr, Sarah Alnegheimish, Akash Chandrayan
-  - *NeurIPS 2024 TSALM Workshop*
-- AdaTrans: Feature-wise and Sample-wise Adaptive Transfer Learning for High-dimensional Regression (preprint) [[Paper](https://arxiv.org/abs/2403.13565)] [[Slides](files/trans-slides.pdf)] [[Poster](files/trans-poster.pdf)]
-  - **Zelin He**, Ying Sun, Jingyuan Liu, Runze Li
-
+<div class="pubs">
+<div class="pub">
+  <div class="pub-title">High-dimensional Parameter Transfer With Fused-Regularizer</div>
+  <div class="pub-authors"><strong>Zelin He</strong>, Ying Sun, Jingyuan Liu, Runze Li</div>
+  <div class="pub-venue"><strong>JMLR</strong></div>
+</div>
+<div class="pub">
+  <div class="pub-title">Weakly-supervised Multi-sensor Anomaly Detection with Time-series Foundation Models</div>
+  <div class="pub-authors"><strong>Zelin He</strong>, Matthew Reimherr, Sarah Alnegheimish, Akash Chandrayan</div>
+  <div class="pub-venue"><strong>NeurIPS</strong> 2024 TSALM Workshop</div>
+</div>
+<div class="pub">
+  <div class="pub-title">AdaTrans: Feature-wise and Sample-wise Adaptive Transfer Learning for High-dimensional Regression</div>
+  <div class="pub-authors"><strong>Zelin He</strong>, Ying Sun, Jingyuan Liu, Runze Li</div>
+  <div class="pub-venue">Preprint</div>
+  <div class="xp-links"><a href="https://arxiv.org/abs/2403.13565">Paper</a><a href="{{ base_path }}/files/trans-slides.pdf">Slides</a><a href="{{ base_path }}/files/trans-poster.pdf">Poster</a></div>
+</div>
+</div>
 </details>
 
-Full list on [Google Scholar](https://scholar.google.com/citations?user=cqhRdPoAAAAJ&hl=en). \* equal contribution.
+<p class="pub-note">* equal contribution.</p>
 
 <h2 id="chat">Let's chat</h2>
 
 <div class="chat-note">
-<p>I'm always glad to talk about agents, reinforcement learning and post-training. If something here connects with what you're working on, send me a note at <span class="mail">zelinhe0@gmail.com</span>.</p>
+<p>I'm always thrilled to connect, whether it's about a new collaboration, a team building something ambitious, or just swapping notes on what you're working on. Say hello at <span class="mail">zelinhe0@gmail.com</span>!</p>
 </div>
-
-## Education
-- Ph.D. in Statistics, Pennsylvania State University, 2022 – Dec 2026
-- B.S. in Statistics, Beijing Normal University, 2018 – 2022
-
-## Honors
-- University Graduate Fellowship, 2023
-- Early Pass of the Doctoral Theory Qualifying Exam, 2022
-- Paul M. Doty Distinguished Graduate Fellowship, 2022
-- Verne M. Willaman Distinguished Graduate Fellowship in Science, 2022
-- National Scholarship, 2021
-
-## Reviewing
-ICML, ICLR, NeurIPS, JASA, TNNLS, JCGS
